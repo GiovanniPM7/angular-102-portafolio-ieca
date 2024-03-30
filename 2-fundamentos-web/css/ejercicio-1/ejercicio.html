@@ -10,6 +10,26 @@
         /* Estilo para el cuerpo de la página */
         body {
             /* Configura el fondo y el color del texto */
+            background-color: aqua;
+        }
+        #title{
+            color: white;
+        }
+        main{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #divMain{
+           display: grid;
+           grid-template-columns: auto;
+           grid-template-rows: 15% auto;
+           justify-content: stretch;
+
+        }
+        img{
+            width: 100%;
+            height: 80%;
         }
 
     </style>
@@ -17,11 +37,16 @@
 <body>
     <!-- Centraliza todo el contenido al centro de la pantalla -->
     <main>
-        <h1>
-            <!-- Completa el título con: "Mi cosa favorita es:" -->
-        </h1>
-        
-        <!-- Agrega aquí la etiqueta para una imagen y vincula con la etiqueta <img /> con la imagen correspondiente  -->
+        <div id="divMain">
+
+            <h1 id="title">
+                <!-- Completa el título con: "Mi cosa favorita es:" -->
+                Mi cosa favorita es:
+            </h1>
+            
+            <!-- Agrega aquí la etiqueta para una imagen y vincula con la etiqueta <img /> con la imagen correspondiente  -->
+            <img src="./moto.png" alt="Andar en Moto">
+        </div>
     </main>
 
 </body>
